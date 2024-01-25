@@ -1,0 +1,17 @@
+{
+  "name": "311_wk5_both_api_hackathon",
+  "version": "1.0.0",
+  "description": "Read this ENTIRE document before beginning work.",
+  "main": "index.js",
+  "scripts": {
+  "start": "nodemon index.js"  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.1",
+    "express": "^4.18.2",
+    "mysql2": "^3.8.0",
+    "nodemon": "^3.0.3"
+  }
+}
