@@ -7,7 +7,7 @@ const {
     createSalary,
     updateSalary,
     deleteSalary
-} = require('../controller/salary.js');
+} = require('../controllers/salary.js');
 
 router.get('/', getSalaries);
 
