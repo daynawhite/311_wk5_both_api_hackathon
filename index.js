@@ -8,4 +8,8 @@ app.get('/', (req, res) => {
     res.send('hello world!');
 })
 
-app.listen(port, () => console.log('Listening on port ${port}'));
+const salaryRouter = require('./routes/salary')
+app.use('/salaries', salaryRouter)
+app.use('/salary', salaryRouter)
+
+app.listen(port, () => console.log(`Listening on port ${port}`));
