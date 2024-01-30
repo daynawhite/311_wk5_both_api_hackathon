@@ -7,7 +7,7 @@ const deptRouter = require('./routes/department')
 app.use(express.json())
 
 app.get('/', (req, res) => {
-    res.send('hello world!');
+  res.send('hello world!');
 })
 
 app.use('/salaries', salaryRouter)
