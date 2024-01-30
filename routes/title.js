@@ -5,24 +5,6 @@ const titlesControllers = require('../controllers/title');
 const router = express.Router()
 
 
-// const {
-
-//   getTitles,
-
-//   getTitleByEmployeeById,
-
-//   createTitle,
-
-//   updateTitle,
-
-//   deleteTitle
-
-// } = require('../controllers/salary.js')
-
-
-// const getTitles = require('../controllers/title');
-
-// const router = express.Router()
 
 router.get('/', titlesControllers.getTitles);
 
