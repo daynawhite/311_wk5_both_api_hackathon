@@ -1,29 +1,37 @@
 const express = require('express')
 
-const {
-
-  getTitles,
-
-  getTitleByEmployeeById,
-
-  createTitle,
-
-  updateTitle,
-
-  deleteTitle
-
-} = require('../controllers/salary.js')
+const titlesControllers = require('../controller/title');
 
 const router = express.Router()
 
-router.get('/', getTitles);
 
-router.get('/:employeeId', getTitleByEmployeeById);
+// const {
 
-router.post('/', createTitle);
+//   getTitles,
 
-router.put('/:employeeId', updateTitle);
+//   getTitleByEmployeeById,
 
-router.delete('/:employeeId', deleteTitle);
+//   createTitle,
+
+//   updateTitle,
+
+//   deleteTitle
+
+// } = require('../controllers/salary.js')
+
+
+// const getTitles = require('../controllers/title');
+
+// const router = express.Router()
+
+router.get('/', titlesControllers.getTitles);
+
+router.get('/:employeeId', titlesControllers.getTitleByEmployeeById);
+
+router.post('/', titlesControllers.createTitle);
+
+router.put('/:employeeId', titlesControllers.updateTitle);
+
+router.delete('/:employeeId', titlesControllers.deleteTitle);
 
 module.exports = router;
