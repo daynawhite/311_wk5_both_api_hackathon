@@ -12,6 +12,6 @@ app.get('/', (req, res) => {
 
 app.use('/salaries', salaryRouter)
 app.use('/salary', salaryRouter)
-app.use('/department', deptRouter)
+app.use('/departments', deptRouter)
 
 app.listen(port, () => console.log(`Listening on port ${port}`));
