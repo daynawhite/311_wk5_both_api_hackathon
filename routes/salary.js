@@ -5,7 +5,7 @@ const {
     getSalaries,
     getSalaryByEmployeeByID,
     createSalary,
-    updateSalary,
+    // updateSalary,
     deleteSalary
 } = require('../controllers/salary.js');
 
@@ -15,8 +15,8 @@ router.get('/:employeeId', getSalaryByEmployeeByID);
 
 router.post('/', createSalary);
 
-router.put('/:employeeId', updateSalary);
+// router.put('/:employeeId', updateSalary);
 
-router.delete('/:employeeId', deleteSalary);
+router.delete('/', deleteSalary);
 
 module.exports = router;
