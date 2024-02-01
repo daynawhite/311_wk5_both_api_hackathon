@@ -5,7 +5,7 @@ const {
   createEmployee,
   updateEmployee,
   deleteEmployee
-} = require('../controller/employee.js')
+} = require('../controllers/employee.js')
 const router = express.Router()
 
 router.get('/', getAllEmployees);

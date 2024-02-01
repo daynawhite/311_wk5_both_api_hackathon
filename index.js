@@ -1,6 +1,7 @@
 const express = require('express');
 const app = express();
 const port = 4001;
+const employeeRouter = require('./routes/employee')
 const salaryRouter = require('./routes/salary')
 const deptRouter = require('./routes/department')
 const titleRouter = require('./routes/title')
@@ -12,6 +13,8 @@ app.get('/', (req, res) => {
   res.send('hello world!');
 })
 
+
+app.use('/employees', employeeRouter)
 app.use('/salaries', salaryRouter)
 app.use('/salary', salaryRouter)
 app.use('/departments', deptRouter)
